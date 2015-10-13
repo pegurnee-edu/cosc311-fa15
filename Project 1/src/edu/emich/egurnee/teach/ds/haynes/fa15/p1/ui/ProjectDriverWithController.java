@@ -1,3 +1,4 @@
+package edu.emich.egurnee.teach.ds.haynes.fa15.p1.ui;
 
 public class ProjectDriverWithController {
 	private static final int NUM_BLOCKS = 4;

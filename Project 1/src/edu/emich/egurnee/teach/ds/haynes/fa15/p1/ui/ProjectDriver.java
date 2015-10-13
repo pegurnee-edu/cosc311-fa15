@@ -1,3 +1,8 @@
+package edu.emich.egurnee.teach.ds.haynes.fa15.p1.ui;
+import edu.emich.egurnee.teach.ds.haynes.fa15.p1.core.MemoryManager;
+import edu.emich.egurnee.teach.ds.haynes.fa15.p1.exceptions.BlockNotAvailableException;
+import edu.emich.egurnee.teach.ds.haynes.fa15.p1.exceptions.InvalidActionException;
+import edu.emich.egurnee.teach.ds.haynes.fa15.p1.exceptions.InvalidAddressException;
 
 public class ProjectDriver {
 	private static final int NUM_BLOCKS = 4;

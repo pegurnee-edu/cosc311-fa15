@@ -1,3 +1,7 @@
+package edu.emich.egurnee.teach.ds.haynes.fa15.p1.core;
+import edu.emich.egurnee.teach.ds.haynes.fa15.p1.exceptions.BlockNotAvailableException;
+import edu.emich.egurnee.teach.ds.haynes.fa15.p1.exceptions.InvalidActionException;
+import edu.emich.egurnee.teach.ds.haynes.fa15.p1.exceptions.InvalidAddressException;
 
 public class MemoryManager {
 	private final MemoryList freeList;

@@ -1,3 +1,4 @@
+package edu.emich.egurnee.teach.ds.haynes.fa15.p1.core;
 public class MemoryList {
 
 	private class MemoryListNode {
