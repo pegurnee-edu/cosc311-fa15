@@ -1,11 +1,12 @@
 package edu.emich.egurnee.teach.ds.haynes.fa15.p1.core;
+
 import edu.emich.egurnee.teach.ds.haynes.fa15.p1.exceptions.BlockNotAvailableException;
 import edu.emich.egurnee.teach.ds.haynes.fa15.p1.exceptions.InvalidActionException;
 import edu.emich.egurnee.teach.ds.haynes.fa15.p1.exceptions.InvalidAddressException;
 
 public class MemoryManager {
-	private final MemoryList freeList;
-	private final MemoryList usedList;
+	private final MemoryPool freeList;
+	private final MemoryPool usedList;
 
 	public MemoryManager(int sizeLimit) {
 		this.usedList = new MemoryList();
@@ -36,11 +37,6 @@ public class MemoryManager {
 		this.freeList.push(i);
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see java.lang.Object#toString()
-	 */
 	@Override
 	public String toString() {
 		return "MemoryManager [freeList="+ this.freeList + ", usedList="

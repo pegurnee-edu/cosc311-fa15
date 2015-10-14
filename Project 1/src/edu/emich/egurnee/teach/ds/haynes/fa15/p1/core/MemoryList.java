@@ -1,5 +1,7 @@
 package edu.emich.egurnee.teach.ds.haynes.fa15.p1.core;
-public class MemoryList {
+
+public class MemoryList
+	implements MemoryPool {
 
 	private class MemoryListNode {
 		int data;
@@ -17,6 +19,7 @@ public class MemoryList {
 		this.top = null;
 	}
 
+	@Override
 	public boolean contains(int i) {
 		boolean toReturn = false;
 		if (this.top != null) {
@@ -36,16 +39,19 @@ public class MemoryList {
 		return toReturn;
 	}
 
+	@Override
 	public boolean isEmpty() {
 		return this.top == null;
 	}
 
+	@Override
 	public int pop() {
 		int item = this.top.data;
 		this.top = this.top.next;
 		return item;
 	}
 
+	@Override
 	public void push(int i) {
 		if (this.top == null) {
 			this.top = new MemoryListNode(i, null);
@@ -54,6 +60,7 @@ public class MemoryList {
 		}
 	}
 
+	@Override
 	public boolean remove(int i) {
 		boolean toReturn = false;
 		if (this.top.data == i) {
@@ -75,11 +82,6 @@ public class MemoryList {
 		return toReturn;
 	}
 
-	/*
-	 * (non-Javadoc)
-	 *
-	 * @see java.lang.Object#toString()
-	 */
 	@Override
 	public String toString() {
 		String toReturn = "";
