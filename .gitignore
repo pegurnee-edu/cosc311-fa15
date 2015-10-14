@@ -1,4 +1,5 @@
-bin
+/bin/
 .classpath
 .settings
 .project
+.~lock*
